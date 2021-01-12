@@ -6,6 +6,9 @@ import Subscribers from '../views/viberrouter/Subscribers.vue'
 import Views from '../views/viberrouter/Views.vue'
 import Likes from '../views/viberrouter/Likes.vue'
 import AutoLikes from '../views/viberrouter/AutoLikes.vue'
+import YoutubeSubsribers from '../views/youtuberouter/YoutubeSubsribers.vue'
+import YoutubeViews from '../views/youtuberouter/YoutubeViews.vue'
+import YoutubeLikes from '../views/youtuberouter/YoutubeLikes.vue'
 
 
 const routes = [
@@ -40,7 +43,25 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: About
+    component: About,
+    redirect: '/youtubeLikes',
+    children: [
+      {
+        path: '/youtubeLikes',
+        name: 'YoutubeLikes',
+        component: YoutubeLikes
+      },
+      {
+        path: '/youtubeSubscribers',
+        name: 'YoutubeSubsribers',
+        component: YoutubeSubsribers
+      },
+      {
+        path: '/youtubeViews',
+        name: 'YoutubeViews',
+        component: YoutubeViews
+      }
+    ]
   },
   {
     path: '/tiktok',

@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <router-link to="/">
-      <i class="fab fa-viber" style="color: blueviolet"></i>
+      <i class="fab fa-instagram" style="color: dodgerblue"></i>
     </router-link>
     <router-link to="/about">
       <i class="fab fa-youtube" style="color: red"></i>
@@ -21,13 +21,16 @@
   text-align: center;
   color: #2c3e50;
 }
+a{
+  color: black;
+}
 
 #nav {
   padding: 30px;
 }
 
 #nav a {
-  font-weight: bold;
+
   font-size: 38px;
   padding: 30px;
 
