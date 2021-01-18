@@ -46,7 +46,7 @@
 
 <script>
     export default {
-        name: "youtubeSubsribers"
+        name: "TiktokSubscribers"
     }
 </script>
 

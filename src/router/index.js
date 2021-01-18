@@ -9,6 +9,9 @@ import AutoLikes from '../views/viberrouter/AutoLikes.vue'
 import YoutubeSubsribers from '../views/youtuberouter/YoutubeSubsribers.vue'
 import YoutubeViews from '../views/youtuberouter/YoutubeViews.vue'
 import YoutubeLikes from '../views/youtuberouter/YoutubeLikes.vue'
+import TiktokLikes from '../views/tiktokrouter/TiktokLikes.vue'
+import TiktokSubscribers from '../views/tiktokrouter/TiktokSubscribers.vue'
+import TiktokViews from '../views/tiktokrouter/TiktokViews.vue'
 
 
 const routes = [
@@ -66,7 +69,25 @@ const routes = [
   {
     path: '/tiktok',
     name: 'TikTok',
-    component: TikTok
+    component: TikTok,
+    redirect: '/tiktokLikes',
+    children: [
+      {
+       path: '/tiktokLikes',
+        name: 'TiktokLikes',
+        component: TiktokLikes
+      },
+      {
+        path: '/tiktokViews',
+        name: 'TiktokViews',
+        component: TiktokViews
+      },
+      {
+        path: '/tiktokSubscribers',
+        name: 'TiktokSubscribers',
+        component: TiktokSubscribers
+      }
+    ]
   }
 ]
 

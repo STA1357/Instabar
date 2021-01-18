@@ -1,54 +1,76 @@
 <template>
-    <div class="info active">
 
-        <div class="first-row">
-            <div class="sub250 p-3">
-                <h5>250</h5>
-                <p>Подписчиков</p>
-                <hr>
-                <h6>59 грн</h6>
-                <button class="sub-btn">Купить сейчас</button>
-            </div>
-            <div class="sub500 p-3">
-                <h5>500</h5>
-                <p>Подписчиков</p>
-                <hr>
-                <h6>99 грн</h6>
-                <button class="sub-btn">Купить сейчас</button>
-            </div>
-        </div>
-        <br>
-        <div class="second-row">
-            <div class="sub1000 p-3">
-                <h5>1000</h5>
-                <p>Подписчиков</p>
-                <hr>
-                <h6>59 грн</h6>
-                <button class="sub-btn">Купить сейчас</button>
-            </div>
-            <div class="sub2500 p-3">
-                <h5>2500</h5>
-                <p>Подписчиков</p>
-                <hr>
-                <h6>99 грн</h6>
-                <button class="sub-btn">Купить сейчас</button>
-            </div>
-            <div class="sub5000 p-3">
-                <h5>5000</h5>
-                <p>Подписчиков</p>
-                <hr>
-                <h6>59 грн</h6>
-                <button class="sub-btn">Купить сейчас</button>
-            </div>
-            <div class="sub10000 p-3">
-                <h5>9999</h5>
-                <p>Подписчиков</p>
-                <hr>
-                <h6>99 грн</h6>
-                <button class="sub-btn">Купить сейчас</button>
-            </div>
-        </div>
+    <div class="container-fluid bg-3 text-center justify-content-between">
+
+            <div class="row prices" style="margin: 50px 15vw">
+                <div class="col-12 col-sm-3 invisible"></div>
+                <div class="col-12 col-sm-3 mb-md-0 mt-5">
+                    <div class="container-in">
+                        <h5 class="pt-4">9999</h5>
+                        <p>Подписчиков</p>
+                        <hr>
+                        <h6 class="text-primary">99 грн</h6>
+                        <button class="btn btn-primary mt-4">Купить сейчас</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 mb-md-0 mt-5">
+                    <div class="container-in">
+                        <h5 class="pt-4">9999</h5>
+                        <p>Подписчиков</p>
+                        <hr>
+                        <h6 class="text-primary">99 грн</h6>
+                        <button class="btn btn-primary mt-4">Купить сейчас</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 invisible"></div>
+
     </div>
+
+
+        <div class="row prices" style="margin: 50px 15vw">
+            <div class="col-12 col-sm-3 mb-md-0 mt-5">
+                <img src="../../assets/img/percentageblue.png" alt="test" class="w-25 h-20 position-absolute ml-4">
+                <div class="container-in">
+                    <h5 class="pt-4">9999</h5>
+                    <p>Подписчиков</p>
+                    <hr>
+                    <h6 class="text-primary">99 грн</h6>
+                    <button class="btn btn-primary mt-4">Купить сейчас</button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-3 mb-md-0 mt-5">
+                <img src="../../assets/img/percentageblue.png" alt="test" class="w-25 h-20 position-absolute ml-4">
+                <div class="container-in">
+                    <h5 class="pt-4">9999</h5>
+                    <p>Подписчиков</p>
+                    <hr>
+                    <h6 class="text-primary">99 грн</h6>
+                    <button class="btn btn-primary mt-4">Купить сейчас</button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-3 mb-md-0 mt-5">
+                <img src="../../assets/img/percentageblue.png" alt="test" class="w-25 h-20 position-absolute ml-4">
+                <div class="container-in">
+                    <h5 class="pt-4">9999</h5>
+                    <p>Подписчиков</p>
+                    <hr>
+                    <h6 class="text-primary">99 грн</h6>
+                    <button class="btn btn-primary mt-4">Купить сейчас</button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-3 mb-md-0 mt-5">
+                <img src="../../assets/img/percentageblue.png" alt="test" class="w-25 h-20 position-absolute ml-4">
+                <div class="container-in">
+                    <h5 class="pt-4">9999</h5>
+                    <p>Подписчиков</p>
+                    <hr>
+                    <h6 class="text-primary">99 грн</h6>
+                    <button class="btn btn-primary mt-4">Купить сейчас</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
 </template>
 
 <script>
@@ -57,66 +79,21 @@
     }
 </script>
 
-<style>
-    .active{
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+<style lang="scss">
+    @import "../../styles/_variables.scss";
+.container-in{
+    background-color: $light-grey;
+    width: 150px;
+    height: 230px;
+    border-radius: 25px;
+}
+.btn{
+    border-radius: 15px;
+}
+@media screen and (max-device-width: 450px){
+    .prices img{
+        position: relative;
+        margin-left: -100px;
     }
-    .sub-btn{
-        color: white;
-        background-color: dodgerblue;
-        border: 1px solid dodgerblue;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        padding: 3px 20px;
-    }
-
-    .first-row {
-        display: inline-flex;
-        justify-content: center;
-    }
-    .sub250{
-        background-color: #E5E5E5;
-        border-radius: 15px;
-        margin-right: 10px;
-    }
-    .sub500{
-        background-color: #E5E5E5;
-        border-radius: 15px;
-        margin-left: 10px;
-    }
-
-    .second-row{
-        display: inline-flex;
-        justify-content: center;
-    }
-
-    .sub1000{
-        background-color: #E5E5E5;
-        border-radius: 15px;
-        padding: 10px;
-        margin-right: 20px;
-    }
-    .sub2500{
-        background-color: #E5E5E5;
-        border-radius: 15px;
-        padding: 10px;
-        margin-right: 10px;
-    }
-
-    .sub5000{
-        background-color: #E5E5E5;
-        border-radius: 15px;
-        padding: 10px;
-        margin-left: 10px;
-    }
-
-    .sub10000{
-        background-color: #E5E5E5;
-        border-radius: 15px;
-        padding: 10px;
-        margin-left: 20px;
-    }
+}
 </style>

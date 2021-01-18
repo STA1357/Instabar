@@ -1,42 +1,49 @@
 <template>
-    <div class="viber-likes">
-        <div class="second-row">
-            <div class="sub1000 p-3">
-                <h5>200</h5>
-                <p>Лайков</p>
-                <hr>
-                <h6>59 грн</h6>
-                <button class="sub-btn">Купить сейчас</button>
-            </div>
-            <div class="sub2500 p-3">
-                <i class="fas fa-percent" id="percent1"></i>
-                <h5>500</h5>
-                <p>Лайков</p>
-                <hr>
-                <h6>99 грн</h6>
-                <button class="sub-btn">Купить сейчас</button>
-            </div>
 
-            <div class="sub5000 p-3">
-                <i class="fas fa-percent" id="percent2"></i>
-                <h5>1500</h5>
-                <p>Лайков</p>
-                <hr>
-                <h6>59 грн</h6>
-                <button class="sub-btn">Купить сейчас</button>
+    <div class="container-fluid text-center justify-content-between">
+        <div class="row prices" style="margin: 50px 15vw">
+            <div class="col-12 col-sm-3 mb-md-0 mt-5">
+                <div class="container-in">
+                    <h5 class="pt-4">10000</h5>
+                    <p>Подписчиков</p>
+                    <hr>
+                    <h6 class="text-primary">99 грн</h6>
+                    <button class="btn btn-primary mt-4">Купить сейчас</button>
+                </div>
             </div>
-
-            <div class="sub10000 p-3">
-                <i class="fas fa-percent" id="percent3"></i>
-                <h5>4000</h5>
-                <p>Лайков</p>
-                <hr>
-                <h6>99 грн</h6>
-                <button class="sub-btn">Купить сейчас</button>
+            <div class="col-12 col-sm-3 mb-md-0 mt-5">
+                <img src="../../assets/img/percentageblue.png" alt="test" class="w-25 h-20 position-absolute ml-4">
+                <div class="container-in">
+                    <h5 class="pt-4">10000</h5>
+                    <p>Подписчиков</p>
+                    <hr>
+                    <h6 class="text-primary">99 грн</h6>
+                    <button class="btn btn-primary mt-4">Купить сейчас</button>
+                </div>
             </div>
+            <div class="col-12 col-sm-3 mb-md-0 mt-5">
+                <img src="../../assets/img/percentageblue.png" alt="test" class="w-25 h-20 position-absolute ml-4">
+                <div class="container-in">
+                    <h5 class="pt-4">10000</h5>
+                    <p>Подписчиков</p>
+                    <hr>
+                    <h6 class="text-primary">99 грн</h6>
+                    <button class="btn btn-primary mt-4">Купить сейчас</button>
+                </div>
             </div>
-
+            <div class="col-12 col-sm-3 mb-md-0 mt-5">
+                <img src="../../assets/img/percentageblue.png" alt="test" class="w-25 h-20 position-absolute ml-4">
+                <div class="container-in">
+                    <h5 class="pt-4">10000</h5>
+                    <p>Подписчиков</p>
+                    <hr>
+                    <h6 class="text-primary">99 грн</h6>
+                    <button class="btn btn-primary mt-4">Купить сейчас</button>
+                </div>
+            </div>
+        </div>
     </div>
+
 </template>
 
 <script>
@@ -46,7 +53,5 @@
 </script>
 
 <style>
-.viber-likes{
-    margin-top: 40px;
-}
+
 </style>
